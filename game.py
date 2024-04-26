@@ -6,13 +6,12 @@ def intro():
     print("Type quit to exit\n")
 
 def question():
-    inp = input("And you ask?\n")
-    if inp == "quit":
+    user_input = input("And you ask?\n")
+    if user_input == "quit":
         exit()
 
 def answer():
-    rndNum = random.randrange(4)
-    match(rndNum):
+    match random.randrange(4):
         case 0:
             print("Yes.")
         case 1:
